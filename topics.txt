@@ -1,0 +1,76 @@
+Function Purity
+   Referentially Transparent + No Side Effects
+
+
+Referential Transparency
+
+
+
+Side Effects
+   Immutable Variables and Data Structures
+   I/O
+   How Purely Functional Programs Deal with This
+      Monads -- A bit difficult to learn but really useful, even without compiler support.
+      State Variables -- Easy to lean, but you have to carry state with you, and they aren't
+          very useful without compiler support.
+
+
+Tail/Sibling Call Optomization
+   What is it
+   Why is it important
+      It allows us to "loop" without side effects
+
+   C# Doesn't do this
+   Node Doesn't do this
+   Python Doesn't do this
+   F# Does This
+   gcc Does This (with correct optomization flag)
+   Purely functional languages all do this
+
+   Langauges that don't seem to use the Debugger as the excuse
+
+   How do we write code that doesn't require this  (Meaningful loops all require side-effects/mutable state variables)
+      Box up the offending segment in a function with a return
+         Usefull for iterators, etc when fold/reduce isn't available
+
+
+
+Purely functional types
+   Okasaki for Reference
+   Immutable or Persistant data structures
+      Lists
+      Stacks
+      Queues
+      Associative Arrays
+
+   How to make a new type
+
+
+
+Pattern Matching
+   This isn't present in most non-functional languages, how do we get by without it
+      Explicit variable assignment
+      Function Lookup Table
+
+
+Lazy Evaluation
+   What is it
+   Memoization
+   How to use it in non-functional languages
+
+
+Currying
+   How to simulate this in non-functional languages
+
+Closures
+   How to simulate this in non-functional languages
+
+
+
+Maybe DataType
+
+
+Result DataType
+
+
+Either DataType
