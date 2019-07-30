@@ -1,3 +1,6 @@
 [submodule "okasaki_list"]
 	path = okasaki_list
 	url = git@github.com:ushulch/functional_cop__okasaki_list.git
+[submodule "excalibur"]
+	path = excalibur
+	url = git@github.com:ushulch/functional_cop__excalibur.git
